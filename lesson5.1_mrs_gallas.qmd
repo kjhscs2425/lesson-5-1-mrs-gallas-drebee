@@ -8,7 +8,16 @@ library(tidyverse)
 ```
 
 ```{r}
-
+num_simulations = 1000
+num_freethrows = 100
+probability = 0.8
+data = rbinom(num_simulations, num_freethrows, probability)
 ```
+
+```{r}
+ggplot(NULL, aes(x = data)) +
+  geom_bar()
+```
+
 
 
